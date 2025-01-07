@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'biblioteca.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': "django.db.backends.postgresql",
-        'NAME': "biblioteca",
-        'USER': "postgres",
-        'PASSWORD': "jajacsmvolavola",
-        'HOST': "127.0.0.1",
-        'PORT': "5432",
+        'NAME': "nombre_de_la_bbdd",
+        'USER': "usuario_de_bbdd",
+        'PASSWORD': "password_de_la_bbdd",
+        'HOST': "host_de_bbdd",
+        'PORT': "puerto_de_bbdd",
     }
 }
 
