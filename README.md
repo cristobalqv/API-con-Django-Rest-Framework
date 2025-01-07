@@ -1,14 +1,13 @@
 # API con DRF: Biblioteca con sistema de préstamo de libros
-------------
+
 El siguiente proyecto consistió en la creación de una API para una Biblioteca ficticia con el objetivo de gestionar los préstamos e inventario de la misma. Está habilitada para que una persona pueda crear un usuario y contraseña y así poder interactuar y generar un préstamo de un libro dependiendo de la disponibilidad del mismo, lo que está almacenado en una base de datos  Postgresql.
 Se profundizaron conceptos de Programación Orientada a Objetos, modelos de bases de datos, serializadores y autenticación en Django-Rest-Framework, entre otros.
 
 **Consideración: ** El enfoque de esta aplicación es de Backend, por lo que las interfaces visuales, dinámicas y de diseño son limitadas y quedan relegadas.
 <br>
+<br>
 
 ### ️⚙️ Características
-
-------------
 
 Este proyecto permite:
 
@@ -19,10 +18,11 @@ Este proyecto permite:
 - 🔄Generar un sistema de préstamo de libros📚
 
 <br>
+<br>
 
 ### 🗒️ Estructura del proyecto y funcionamiento del código `</>`
 
-------------
+
 
 ```
 PROYECTO/
@@ -64,6 +64,7 @@ Los archivos y directorios del proyecto más relevantes para la lógica, funcion
 `proyecto_blog/settings.py` [Script](https://github.com/cristobalqv/django-blog/blob/main/proyecto_blog/settings.py " Script") que contiene información para el correcto funcionamiento de la app
 
 <br>
+<br>
 
 ### 💻 Instalación y uso
 
@@ -75,6 +76,7 @@ Clona el repositorio:
 git clone https://github.com/cristobalqv/django-blog
 ```
 
+<br>
 <br>
 Para ejecutar el proyecto, en primera instancia deberás crear un superusuario para poder habilitar un usuario en el administrador de Django. Debes situarte en el mismo directorio de `manage.py` :
 
@@ -88,6 +90,7 @@ Posteriormente, abre un navegador y dependiendo si quieres acceder al panel de a
 - http://127.0.0.1:8000/admin
 - http://127.0.0.1:8000/indice
 
+<br>
 <br>
 
 ### 🤝 Contribuciones
@@ -110,6 +113,7 @@ Posteriormente, abre un navegador y dependiendo si quieres acceder al panel de a
 
 - ** Envía un Pull Request.**
 
+<br>
 <br>
 
 ### 📜 Licencia
