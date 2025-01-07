@@ -2,7 +2,7 @@
 
 [![1](https://github.com/cristobalqv/Biblioteca-Sistema-de-prestamo-de-libros/blob/main/varios/imagen1.png "1")](https://github.com/cristobalqv/Biblioteca-Sistema-de-prestamo-de-libros/blob/main/varios/imagen1.png "1")
 
-El siguiente proyecto consistió en la creación de una API para una Biblioteca ficticia con el objetivo de gestionar los préstamos e inventario de la misma. Está habilitada para que una persona pueda crear un usuario y contraseña y así poder interactuar y generar un préstamo de un libro dependiendo de la disponibilidad del mismo, lo que está almacenado en una base de datos  Postgresql.
+El siguiente proyecto consistió en la creación de una API para una Biblioteca ficticia con el objetivo de gestionar los préstamos e inventario de la misma. Está habilitada para que una persona pueda crear un usuario y contraseña y así poder interactuar y generar un préstamo de un libro dependiendo de la disponibilidad del mismo, lo que está almacenado en una base de datos  Postgresql. Un aspecto a destacar es la interacción entre la base de datos y las solicitudes de préstamos, descontando unidades disponibles y actualizándolas una vez devuelto el libro.
 Se profundizaron conceptos de Programación Orientada a Objetos, modelos de bases de datos, serializadores y autenticación en Django-Rest-Framework, entre otros.
 
 **Consideración: ** El enfoque de esta aplicación es de Backend, por lo que las interfaces visuales, dinámicas y de diseño son limitadas y quedan relegadas. Aclarar también que este proyecto corresponde a un **MVP**, por lo que puede estar en constante cambio (cambios que se estarán anunciando)
@@ -62,8 +62,10 @@ Los archivos y directorios del proyecto más relevantes para la lógica, funcion
 `gestionador/api/views.py` Este [script](https://github.com/cristobalqv/Biblioteca-Sistema-de-prestamo-de-libros/blob/main/gestionador/api/views.py "script") contiene los Views y Viewsets que manejan la lógica de procesamiento de las peticiones HTTP (GET, PUT, POST, DELETE). Los Viewsets son clases que simplifican la creación de endpoints REST.
 
 `gestionador/models.py` [Script](https://github.com/cristobalqv/Biblioteca-Sistema-de-prestamo-de-libros/blob/main/gestionador/models.py " Script") donde se registran los modelos de la base de datos y sus respectivas relaciones.
+
 <br>
 <br>
+
 ## 💻 Instalación y uso
 
 Clona el repositorio:
@@ -84,8 +86,16 @@ Posteriormente, abre un navegador y dependiendo si quieres acceder al panel de a
 - http://127.0.0.1:8000/admin
 - http://127.0.0.1:8000/api
 - http://127.0.0.1:8000/register/     (debes situarte en la pestaña HTML form)
+
+**Consideración**: Para la solicitud de devolución de libros, usar Postman con los siguientes parámetros:
+- Solicitud PUT con el endpoint "http://127.0.0.1:8000/api/prestamos/{id_prestamo}/"   (el id_prestamo se encuentra en la tabla gestionador_prestamo)
+- Autorización de tipo "API Key" con Key = "Authorization" y Value = "Token {numero_token}"   (token generado al crear un usuario)
+- En headers, Key = "Content-type" y Value = "application/json"
+- Por último, en la pestaña "Body" colocar Raw y Json. con el siguiente diccionario: {"estado": "DEVUELTO", "libro": id_del_libro}
+
 <br>
 <br>
+
 ## 🤝 Contribuciones
 
 
