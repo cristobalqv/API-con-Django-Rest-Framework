@@ -1,5 +1,7 @@
 # API con DRF: Biblioteca con sistema de préstamo de libros
 
+[![1](https://github.com/cristobalqv/Biblioteca-Sistema-de-prestamo-de-libros/blob/main/varios/imagen1.png "1")](https://github.com/cristobalqv/Biblioteca-Sistema-de-prestamo-de-libros/blob/main/varios/imagen1.png "1")
+
 El siguiente proyecto consistió en la creación de una API para una Biblioteca ficticia con el objetivo de gestionar los préstamos e inventario de la misma. Está habilitada para que una persona pueda crear un usuario y contraseña y así poder interactuar y generar un préstamo de un libro dependiendo de la disponibilidad del mismo, lo que está almacenado en una base de datos  Postgresql.
 Se profundizaron conceptos de Programación Orientada a Objetos, modelos de bases de datos, serializadores y autenticación en Django-Rest-Framework, entre otros.
 
